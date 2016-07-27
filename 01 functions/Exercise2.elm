@@ -11,12 +11,16 @@ capitalize maxlength name =
     else
         name
 
+
 main =
-  let
-  name = "Ludovic Coullet"
-  length = String.length name
-  in 
-  (capitalize 10 name)
-  ++ " - name length "
-  ++ toString length
-  |> Html.text
+    let
+        name =
+            "Ludovic Coullet"
+
+        length =
+            String.length name
+    in
+        (capitalize 10 name)
+            ++ " - name length "
+            ++ toString length
+            |> Html.text
